@@ -152,7 +152,7 @@ NATの外から、プライベートIPアドレスとポート番号のペアを
 
 ### ICE is 何？
 
-Interactive Connectivity Establishmentの略。
+Interactive Connectivity Establishmentの略。プロトコルのひとつ。
 
 NAT越えを行うための手法の一つ。ICEでは下記を行う。
 
@@ -173,7 +173,7 @@ VanillaはすべてのIPアドレスとポート番号のペアを収集して�
 
 すべて接続を試し、接続確立されたものから使用するペアを選択する。
 
-バニラ自体には標準である意味がある。
+バニラという単語自体には標準という意味がある。
 
 ICEという名前のためのシャレみたいなもんでしょうね。
 
@@ -201,7 +201,7 @@ Trickleは滴り落ちるという意味なので、ペアを少しずつ試す�
 
 ### STUN is 何？
 
-Session Traversal Utilities NAT の略。
+Session Traversal Utilities for NAT の略。プロトコルのひとつ。
 
 これもNAT越えのための手法のひとつ。
 
@@ -209,21 +209,19 @@ STUNで対象のエンドポイントのネットワーク上にNATが存在す�
 
 
 
-テストパケットを送り、自分のIPが相手のネットワーク上からどういうIPで見えるかを確認します。
+テストパケットを送り、自分のIPが外部のネットワーク上からどういうIPで見えるかを確認します。
 
 自分のIPと一致していれば、NATは存在しません。
 
 存在しなければ、NAT越えの必要なくパケットを送ることが出来ます。
 
-ただ、ほとんどのケースでIPが一致せず、NATが存在します。
-
 
 
 ### TURN is 何？
 
-TURN の略。
+Traversal Using Relays around NAT の略。プロトコルのひとつ。
 
-STUNでテストした結果、NATが存在する場合、実際に接続を行うプロトコル。
+STUNでテストした結果、NATが存在する場合、実際に接続を行う。
 
 
 
