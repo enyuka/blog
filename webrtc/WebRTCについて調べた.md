@@ -273,7 +273,7 @@ Twilioではこの辺り難しいところを何も考えずに使える点が�
 
 手っ取り早くWebRTCに触れてみたい方はTwilioをさわってみてはどうでしょう。
 
-
+https://twilio.kddi-web.com/
 
 
 
