@@ -1,6 +1,6 @@
 # 読んだ本一覧
 
-## 技術
+## 技術（6冊）
 
 ### APIデザインの極意 Java/NetBeansアーキテクト探究ノート
 
@@ -26,7 +26,7 @@ https://amzn.to/2R9iHnG
 
 https://amzn.to/2BADGpq
 
-## 自己啓発
+## 自己啓発（17冊）
 
 ### エッセンシャル思考 最少の時間で成果を最大にする
 
@@ -84,6 +84,10 @@ https://amzn.to/2EIsE5p
 
 https://amzn.to/2RgJmyG
 
+### 人を動かす
+
+リンク貼る
+
 ### 日本再興戦略
 
 https://amzn.to/2BwFsYD
@@ -92,7 +96,7 @@ https://amzn.to/2BwFsYD
 
 https://amzn.to/2BBk7x8
 
-## マラソン
+## マラソン（4冊）
 
 ### マラソンは毎日走っても完走できない　「ゆっくり」「速く」「長く」で目指す42・195キロ
 
@@ -110,7 +114,7 @@ https://amzn.to/2Ra5N8H
 
 https://amzn.to/2Cs3JAJ
 
-## 他
+## 他（7冊）
 
 ### ３年の星占い　天秤座　2018-2020
 
