@@ -2,144 +2,76 @@
 
 ## 技術（6冊）
 
-### APIデザインの極意 Java/NetBeansアーキテクト探究ノート
+[APIデザインの極意 Java/NetBeansアーキテクト探究ノート](https://amzn.to/2EHCk0i)
 
-https://amzn.to/2EHCk0i
+[新装版 達人プログラマー 職人から名匠への道](https://amzn.to/2EGdfml)
 
-### 新装版 達人プログラマー 職人から名匠への道
+[アドレナリンジャンキー プロジェクトの現在と未来を映す86パターン](https://amzn.to/2R92Xkt)
 
-https://amzn.to/2EGdfml
+[なるほどデザイン](https://amzn.to/2EGmQJL)
 
-### アドレナリンジャンキー プロジェクトの現在と未来を映す86パターン
+[携帯電話はなぜつながるのか 第2版](https://amzn.to/2R9iHnG)
 
-https://amzn.to/2R92Xkt
-
-### なるほどデザイン
-
-https://amzn.to/2EGmQJL
-
-### 携帯電話はなぜつながるのか 第2版
-
-https://amzn.to/2R9iHnG
-
-### Real World HTTP ―歴史とコードに学ぶインターネットとウェブ技術
-
-https://amzn.to/2BADGpq
+[Real World HTTP ―歴史とコードに学ぶインターネットとウェブ技術](https://amzn.to/2BADGpq)
 
 ## 自己啓発（17冊）
 
-### エッセンシャル思考 最少の時間で成果を最大にする
+[エッセンシャル思考 最少の時間で成果を最大にする](https://amzn.to/2RdaQoW)
 
-https://amzn.to/2RdaQoW
+[超一流になるのは才能か努力か？](https://amzn.to/2Bxzxmc)
 
-### 超一流になるのは才能か努力か？
+[エンジニアリング組織論への招待　～不確実性に向き合う思考と組織のリファクタリング](https://amzn.to/2R7ofPz)
 
-https://amzn.to/2Bxzxmc
+[小さな習慣](https://amzn.to/2BwIAUC)
 
-### エンジニアリング組織論への招待　～不確実性に向き合う思考と組織のリファクタリング
+[スモール・リーダーシップ チームを育てながらゴールに導く「協調型」リーダー](https://amzn.to/2Acd0LO)
 
-https://amzn.to/2R7ofPz
+[ニューエリート グーグル流・新しい価値を生み出し世界を変える人たち](https://amzn.to/2A82dCs)
 
-### 小さな習慣
+[TED 驚異のプレゼン 人を惹きつけ、心を動かす9つの法則](https://amzn.to/2BwEziL)
 
-https://amzn.to/2BwIAUC
+[メンタリング・マネジメント](https://amzn.to/2R4IGwz)
 
-### スモール・リーダーシップ チームを育てながらゴールに導く「協調型」リーダー
+[このまま今の会社にいていいのか？と一度でも思ったら読む 転職の思考法](https://amzn.to/2EJL6uG)
 
-https://amzn.to/2Acd0LO
+[チームのことだけ、考えた。](https://amzn.to/2BwHQyO)
 
-### ニューエリート グーグル流・新しい価値を生み出し世界を変える人たち
+[Learn Better ― 頭の使い方が変わり、学びが深まる6つのステップ](https://amzn.to/2CrcYRM)
 
-https://amzn.to/2A82dCs
+[いつのまにか心をひらいてしまう 絶妙な「聞き方」](https://amzn.to/2BxluNA)
 
-### TED 驚異のプレゼン 人を惹きつけ、心を動かす9つの法則
+[諦める力～勝てないのは努力が足りないからじゃない](https://amzn.to/2EIsE5p)
 
-https://amzn.to/2BwEziL
+[「首から下」で考えなさい](https://amzn.to/2RgJmyG)
 
-### メンタリング・マネジメント
+[人を動かす](https://amzn.to/2TqGc9l)
 
-https://amzn.to/2R4IGwz
+[日本再興戦略](https://amzn.to/2BwFsYD)
 
-### このまま今の会社にいていいのか？と一度でも思ったら読む 転職の思考法
-
-https://amzn.to/2EJL6uG
-
-### チームのことだけ、考えた。
-
-https://amzn.to/2BwHQyO
-
-### Learn Better ― 頭の使い方が変わり、学びが深まる6つのステップ
-
-https://amzn.to/2CrcYRM
-
-### いつのまにか心をひらいてしまう 絶妙な「聞き方」
-
-https://amzn.to/2BxluNA
-
-### 諦める力～勝てないのは努力が足りないからじゃない
-
-https://amzn.to/2EIsE5p
-
-### 「首から下」で考えなさい
-
-https://amzn.to/2RgJmyG
-
-### 人を動かす
-
-リンク貼る
-
-### 日本再興戦略
-
-https://amzn.to/2BwFsYD
-
-### CAREER SKILLS　ソフトウェア開発者の完全キャリアガイド
-
-https://amzn.to/2BBk7x8
+[CAREER SKILLS　ソフトウェア開発者の完全キャリアガイド](https://amzn.to/2BBk7x8)
 
 ## マラソン（4冊）
 
-### マラソンは毎日走っても完走できない　「ゆっくり」「速く」「長く」で目指す42・195キロ
+[マラソンは毎日走っても完走できない　「ゆっくり」「速く」「長く」で目指す42・195キロ](https://amzn.to/2CpxAK8)
 
-https://amzn.to/2CpxAK8
+[誰も教えてくれなかったマラソンフォームの基本](https://amzn.to/2ReKhQ8)
 
-### 誰も教えてくれなかったマラソンフォームの基本
+[３０キロ過ぎで一番速く走るマラソン　サブ４・サブ３を達成する練習法](https://amzn.to/2Ra5N8H)
 
-https://amzn.to/2ReKhQ8
-
-### ３０キロ過ぎで一番速く走るマラソン　サブ４・サブ３を達成する練習法
-
-https://amzn.to/2Ra5N8H
-
-### ゼロベースランニング
-
-https://amzn.to/2Cs3JAJ
+[ゼロベースランニング](https://amzn.to/2Cs3JAJ)
 
 ## 他（7冊）
 
-### ３年の星占い　天秤座　2018-2020
+[３年の星占い　天秤座　2018-2020](https://amzn.to/2RfmL5C)
 
-https://amzn.to/2RfmL5C
+[2018年の天秤座 「星ダイアリー2018」より 星ダイアリー 2018](https://amzn.to/2CrjNTk)
 
-### 2018年の天秤座 「星ダイアリー2018」より 星ダイアリー 2018
+[酒好き医師が教える最高の飲み方](https://amzn.to/2Bzk4SC)
 
-https://amzn.to/2CrjNTk
+[夜と霧 新版](https://amzn.to/2BCpAnp)
 
-### 酒好き医師が教える最高の飲み方
+[羆嵐](https://amzn.to/2BzyKRS)
 
-https://amzn.to/2Bzk4SC
+[高齢者住まい 種類と選び方 高齢者住まいアドバイザー検定公式テキスト【第2版】(介護保険法2018年改正対応)](https://amzn.to/2Bxlq0i)
 
-### 夜と霧 新版
-
-https://amzn.to/2BCpAnp
-
-### 羆嵐
-
-https://amzn.to/2BzyKRS
-
-### 高齢者住まい 種類と選び方 高齢者住まいアドバイザー検定公式テキスト【第2版】(介護保険法2018年改正対応)
-
-https://amzn.to/2Bxlq0i
-
-### 愛するということ 新訳版
-
-https://amzn.to/2EIfmpO
+[愛するということ 新訳版](https://amzn.to/2EIfmpO)
