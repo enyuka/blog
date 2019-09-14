@@ -60,9 +60,12 @@ Rだと、`ggplot2`というグラフ描画が得意なパッケージが使え�
 
 TODO 画像貼る
 
+※ データは仮のものです。下記JavaScriptコードでダミーを作成しています
+https://github.com/enyuka/rlang_mokumoku/blob/master/src/analyse_phone/data/mk_dummy_data.js
+
 このグラフから分かることは
-`050xxxxyyyy`の平均応答時間は10秒なので、サービスレベルが高く、
-対して、`0120xxxyyy`は平均応答時間が14秒になっています。
+`050xxxxyyyy`の平均応答時間は10秒前後で推移しているので、サービスレベルが高く、
+対して、`0120xxxyyy`は平均応答時間が14秒前後で推移しています。
 そのため、この番号はサービスレベルが低いと言わざるをえません。
 この番号に関しては、受電できる人を増やしたり、
 IVRを用いて、そもそも受電しないなどの施策を行い、
@@ -76,8 +79,7 @@ IVRを用いて、そもそも受電しないなどの施策を行い、
 ## コード
 
 どういうコードになったかの説明をします。
-
-Githubはこちら（TODO URL貼る）
+Githubは[こちら](https://github.com/enyuka/rlang_mokumoku/tree/master/src/analyse_phone)
 
 ### 使ったデータ形式
 
@@ -114,8 +116,8 @@ Githubはこちら（TODO URL貼る）
 ちゃんと理解できていませんでしたね:thinking:
 
 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=birdmangai-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B07F1KL3KR&linkId=9c35b951fcbe91cc6ffcbc32b4240e0e"></iframe>
-ちなみにこの[惑星本](https://amzn.to/34yOYIL)は[@SKUE](https://twitter.com/Mr_Sakaue)さんも、
-Tokyo RのSlackでもおすすめと言われており、とてもいい本です。
+ちなみにこの[惑星本](https://amzn.to/34yOYIL)は[@SKUE](https://twitter.com/Mr_Sakaue)さんにも、Tokyo RのSlackでもおすすめされました。
+とてもいい本だと思います。
 
 #### 整然データ
 
@@ -148,6 +150,7 @@ Tokyo RのSlackでもおすすめと言われており、とてもいい本で�
 
 ちなみに乱雑データを苦労して作ったので、
 せっかくなのでこれもGithubに上げてあります。
+https://github.com/enyuka/rlang_mokumoku/blob/master/src/analyse_phone/messy_analyse_speed_of_answer.r
 
 ## まとめ
 
