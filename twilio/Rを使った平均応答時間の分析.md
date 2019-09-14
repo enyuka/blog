@@ -113,7 +113,7 @@ Githubは[こちら](https://github.com/enyuka/rlang_mokumoku/tree/master/src/an
 整然データについて教えてもらいました。
 
 整然データ自体は下記惑星本で学んでハイライトまでしていたのですが、
-ちゃんと理解できていませんでしたね:thinking:
+ちゃんと理解できていませんでしたね🤔
 
 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=birdmangai-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B07F1KL3KR&linkId=9c35b951fcbe91cc6ffcbc32b4240e0e"></iframe>
 ちなみにこの[惑星本](https://amzn.to/34yOYIL)は[@SKUE](https://twitter.com/Mr_Sakaue)さんにも、Tokyo RのSlackでもおすすめされました。
