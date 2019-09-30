@@ -160,7 +160,7 @@ https://ja.wordpress.org/plugins/markdown-editor/
 それをインストールすることで`Markdown Editor`のプラグインが動きます。
 
 ただこの状態って、健全じゃないと思っていて、
-CSSのimport重ねがけしてぶっ壊れるみたいな
+CSSの!important重ねがけしてぶっ壊れるみたいな
 嫌な気配を感じます。
 
 #### 表示速度
