@@ -9,17 +9,22 @@
 Twilio Flexを実務でできる人が少ない(観測範囲内)からです。
 今、多分こんな感じです。
 
-Twilio Flexでコンタクトセンター立ち上げたい会社 >>> Twilioできる人 >>>>>>> Twilio Flexできる人（いるのか？）
+`Twilio Flexでコンタクトセンター立ち上げたい会社 >>> Twilioできる人 >>>>>>> Twilio Flexできる人（いるのか？）`
 
 僕はTwilioチョットデキルと思うのですが、
 Flexは本当によくわかってないので、
 市場価値を上げるために学習をしました。
-1ヶ月ニートしてるのも、この辺勉強するためと言っても過言ではない。
+1ヶ月ニートしてるのも、Flexの勉強するためと言っても過言ではない。
 
 ## Flexについて改めて
 
 以前、こんな記事を書きました。
 http://harinoma.info/?p=80
+
+書いている内容のサマリーとしては下記です。
+* CPaaSという概念の提唱がよい
+* コンタクトセンターのUIのパッケージング
+* Twilioのビジョンを体現したプロダクト
 
 改めて読み直しても、今と変わらず、
 だいたい言いたいことはこの記事に書いてある通りです。
@@ -139,13 +144,14 @@ Incoming Messageした後の挙動が設定されてないからです。
 Studioで設定しましょう。
 Studio管理画面に初期設定だと、
 `Webchat Flow`というフローがあるはずです。
-それのフローを設定し、チャットボットが返信するようにしましょう。
+それのフローを設定し、チャットボットが返信するように設定の変更をします。
 
 Studio内のダイアログ外をクリックすると、
 ウィジェット追加メニューが表示されるので、
 `Messaging ＞ Send Message`を追加します。
 追加されたウィジェットで
 Widget NameとMessage Bodyを適当に入れます。
+
 チュートリアルなので、Nameは適当でいいですが、
 本番稼働をする際は名前付けは一定のルールに従って付けましょう。
 適当に名前をつけると、多分10個超えたあたりから後悔します。
@@ -197,18 +203,18 @@ Flexでも簡単に設定できます。
 
 IVRを作るには下記手順を踏んでください。
 
-1. Gather Input on Callというウィジェットを作る
-2. 1のウィジェットのText to Sayに適当なメッセージを入れる
-3. Split Based onというウィジェットを作る
-4. Say/Playというウィジェットを作る
-5. 適当に言わせたいメッセージを入れる。`押したボタンは何番です`のようにに変化がわかりやすいメッセージがおすすめです
+1. `Gather Input on Call`というウィジェットを作る
+2. 1のウィジェットの`Text to Say`に適当なメッセージを入れる
+3. `Split Based on`というウィジェットを作る
+4. `Say/Play`というウィジェットを作る
+5. 適当に言わせたいメッセージを入れる。`押したボタンは何番です`のように変化がわかりやすいメッセージがおすすめです
 6. Sayを重複コピーし、メッセージ内容を変更します
-7. Transitionsを設定します
-  1. Triggerの`Incoming Call`にGatherウィジェットを接続する
-  2. GatherウィジェットにSplitウィジェットを接続する
-  3. Splitウィジェットの`IF NO CONDITION MATCHES`を3で作ったGatherウィジェットに接続する
-  4. Splitウィジェットに`TODO`4~7で作ったSayウィジェットに接続する 
-  5. 各SayウィジェットにFlexのウィジェットを接続する
+7. `Transitions`を設定します
+  1. Triggerの`Incoming Call`に`Gather`ウィジェットを接続する
+  2. `Gather`ウィジェットに`Split`ウィジェットを接続する
+  3. `Split`ウィジェットの`IF NO CONDITION MATCHES`を3で作った`Gather`ウィジェットに接続する
+  4. `Split`ウィジェットの`Transitions`にある`Equal To`を設定し`Gather`ウィジェットが取り得る値とマッチさせ、4~7で作ったSayウィジェットに接続する 
+  5. 各`Say`ウィジェットに`Send to Flex`のウィジェットを接続する
 
 これらの手順をすべて行うと、下記画像のようになります。
 
@@ -237,10 +243,140 @@ Publishを行い、設定を反映させます。
 この概念はWFO(WorkForce Optimization)、
 従業員業務改善と呼ばれるものです。
 
-この割り振り設定にはTwilioのTaskRouterという
+この受電の割り振り設定にはTwilioのTaskRouterという
 プロダクトが使用されています。
 TaskRouterに関しては、
 日本国内でプロダクト環境に導入したのは多分僕だけですｗ
+技術的な相談がしたいなどありましたら、
+[DM](24guchia1@gmail.com)などでご相談ください。
+
+#### TaskRouterの設定について
+
+[https://www.twilio.com/docs/flex/quickstart/flex-routing-skills](https://www.twilio.com/docs/flex/quickstart/flex-routing-skills)
+
+チュートリアルとしてはここから先に記載があります。
+しかし、チュートリアルを完了するにあたっても
+実際の挙動確認にPC2台用意する必要があるなど、
+なかなか手間なので流し見だけしました。
+
+上で書いてある通りですが、
+IVRでTaskをスキルベースルーティングする旨が書いてあります。
+
+### FlexのReactプラグインを作成する
+
+[https://www.twilio.com/docs/flex/quickstart/getting-started-plugin](https://www.twilio.com/docs/flex/quickstart/getting-started-plugin)
+
+Reactチュートリアルやったのに、
+Reactを使わない？！と思ってましたが、
+このチュートリアルから使うことになります。
+一安心ですね。
+
+### CRM連携デモ
+
+デモではbingと連携しています。
+ということは、GoogleやYahooも連携できる？
+と思いましたが、下記エラーが発生し、
+連携できませんでした。
+`Refused to display 'https://www.google.com/search?q=routing' in a frame because it set 'X-Frame-Options' to 'sameorigin'.`
+
+これはFlex画面右側の部分でiframeを利用して表示しているが、
+GoogleやYahooはiframeでの
+別ドメインへ埋め込みを禁止している設定のためです。
+なんで突然bingなんだろうと思ったんですが、
+bingはiframeで別ドメインでも表示可能な設定（or 禁止設定をしていない）ため、
+bingを利用するようです。
+
+今回はチュートリアルなので良いですが、
+内製CRMやSalesforce、Zohoと言った
+CRMを使う場合もX-Frame-Optionsの設定について注意が必要です。
+
+とはいえ、このような連携ができるのは便利ですね。
+
+### ローカルでの開発とAssetsを使った本番環境への適用
+
+Assetsは静的ホスティングができる
+Twilioのプロダクトの一つです。
+
+チュートリアルでは`localhost:3000`でbing連携を行い、
+その後、npmでコンパイルしたJavaScriptファイルを
+Assetsに起き、本番環境に適用しています。
+
+この仕組を利用すれば、
+開発者はローカル環境で修正を行い、GitHubにコミット。
+マージされたら、npmでコンパイルを行い、
+AssetsにTwilio CLIでデプロイまで行うことができますね。
+
+ちなみにTwilio CLIでAssets関連を呼び出すには
+下記のようなコマンドを利用します。
+```
+twilio api:serverless:v1:services:assets:
+create           fetch            list             update           versions:create  versions:fetch   versions:list
+```
+
+Twilio CLIについては下記記事でまとめてますので、
+詳しく知らない方は読んでみてください。
+http://harinoma.info/?p=375
+
+### ReactコンポーネントをUIに追加する
+
+[https://www.twilio.com/docs/flex/tutorials/adding-components-flex-ui](https://www.twilio.com/docs/flex/tutorials/adding-components-flex-ui)
+
+内容としては静的なTODOリストコンポーネントを
+Reactで作成し追加するだけなので、内容の説明は割愛。
+基本的にコピペでできます。
+
+これだけだと何の意味がわからないとなるので、
+用途を考えてみました。
+TODOリストを顧客のステータスに応じて、
+変更するというのが便利そうです。
+顧客のステータスが、初回コンタクトか、
+何回目かの連絡か、何かしらのコンバージョン達成時、
+達成後のアフターフォローなどで聞くべき項目は変わります。
+そのため、TODOリストを変更する必要がありますが、
+これをコンポーネント一つで実装できます。
+分割により、変更に関する影響が少なくできるのは
+メリットになりえますね。
+
+また、TODOリストで完了した項目をクリックすると、
+メモを書けるコンポーネントを出し、
+保存するとTODOに対する完了項目を書き出すようにすれば良さそうです。
+対応ログを書くのがめんどくさいとなるのが、
+人間の心情なので、定型的に作業ができるようにすることで、
+オペレーターの負担を軽減できると考えています。
+さらにコンポーネント側で管理することにより、
+DBなどを利用し、TODOリストを管理者が変更できるようにすれば、
+TODOリストが変わっても周知など最小限で済ますことができ、
+周知を忘れていても、TODOリストが変わるため、
+現場での対応が古いままになると言ったことは減らせられそうです。
+
+コンポーネントを作って、
+追加などを行うのは下記ドキュメントにある通りで操作可能です。
+[https://www.twilio.com/docs/flex/components-add-replace-modify](https://www.twilio.com/docs/flex/components-add-replace-modify)
+
+UIとしてはモダンですし、
+コンタクトセンターのデファクトスタンダードを知らない人が多い中、
+デザインをそこまで意識しなくていいのはメリットですね。
+覚えることは相当多いですが、bootstrap4やUIkitと言った
+ブートストラップツールも覚えること多いですし、
+まあ許容範囲かなという所感です。
+
+#### ドキュメントのコードがバグってるっぽい
+
+[https://www.twilio.com/docs/flex/quickstart/getting-started-plugin#build-your-flex-plugin](https://www.twilio.com/docs/flex/quickstart/getting-started-plugin#build-your-flex-plugin)
+
+Build your Flex plugin という項で、
+src/SamplePlugin.jsを置き換えるよう
+サンプルコードが書いてありますが、
+そのままコピペすると動きませんでした。
+
+原因としては、
+`import CustomTaskListComponent from './CustomTaskListComponent';`
+ここでエラーが起きており、`CustomTaskListComponent`が無いエラーがでます。
+実際に存在しておらず、ドキュメントにも書いていないため、
+コメントアウトしたところ動きました。
+
+別のページに似たような名前のコンポーネント(`MyCustomTaskInfoPanelItem`)を作るチュートリアルがあるため、
+元はあったのかな？
 
 ## ちょっと待って、Flexの話が少なすぎない？
 
@@ -267,6 +403,7 @@ UIをReactでかっこよくしているフレームワークでしかありま�
 * Sync
 * TaskRouter
 * Studio
+* Assets
 
 これら技術に立脚したプロダクトがFlexです。
 
@@ -337,15 +474,19 @@ Flexにおいて、Studioは重要な位置にあります。
 Studioを編集するために、Twilio管理画面にログインする必要があります。
 しかし、Twilio管理画面は
 電話番号を買うのはもちろん、**保有している電話番号をリリースしたり**、
-**個人情報がもりもり入る顧客との通話録音ファイルをダウンロードしたり**、
+**Studioのフローを消したり**など、
 かなりクリティカルな操作が可能です。
 悪意を持って操作する人はいないと信じたいですが、
 うっかり電話番号を**リリースしちゃいました！**や、
 うっかりFlexで使ってる**Studioのフローを壊しちゃいました！**
 みたいなことは起こり得ないとはいえません。
 
-そのため、結局はTwilioやコンタクトセンターのリテラシーが
+そのため、結局はTwilioとコンタクトセンターのリテラシーが
 高くないとStudioの操作を一任するということは難しく、
 エンジニアの負荷を軽減するにはまだまだ発展途上という認識です。
 Studioだけ操作可能などの権限設定があると
 もう少し安心できますね。
+
+## まとめ
+
+TODO　めちゃくちゃ長くなったので、分割する
