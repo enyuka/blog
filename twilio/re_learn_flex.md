@@ -155,7 +155,11 @@ Twilioポイントが新規作成するFlexプロジェクトで使えない点�
 Flexに乗り換えようと思っても、移行がしづらいのでは？
 相談すると、この辺は対応してくれるのかな？
 
-### SMSの入力欄で日本語入力ができない
+### SMSの入力欄で日本語入力ができない → できた
+
+  2019年10月22日 18:10 追記
+  日本語入力のバグらしきものは修正予定、
+  プラグインで対応も可能です。
 
 `こんにちは`と入力しようとすると、
 下記画像のようになりました。
@@ -174,6 +178,58 @@ Chromeの開発者ツールで見たところ、
 キー入力するたびにtextareaにvalueを設定するような挙動をしているため、
 入力中に入力値が確定されるようです。
 なぜこのような挙動なのか・・・
+
+#### 追記：このバグは修正予定・現時点の暫定対応可能
+
+この記事上げたら赤い人から即レスが来ました。
+https://www.facebook.com/eiichi.nishiguchi/posts/2319676841477040?comment_id=2319721564805901
+
+次回アップデートで改修予定なので、
+一旦、この件はなしで導入検討して良さそうです。
+また、暫定対応で下記コードを書き、
+ローカル環境で試したところ、無事日本語入力ができました。
+```
+flex.MessageInput.defaultProps.useLocalState = true;
+```
+
+#### さらに追記：useLocalStateは何者か？
+
+直ったけど、このプロパティをtrueにする影響は
+何なんだろうと思って確認したところ、
+ドキュメントURLを教えてもらいました。
+[https://media.twiliocdn.com/flex/firstlook-docs/MessageInput.html#.MessageInputProps__anchor](https://media.twiliocdn.com/flex/firstlook-docs/MessageInput.html#.MessageInputProps__anchor)
+
+どうやって検索すればここにたどり着くんだろう・・・
+
+[https://www.twilio.com/docs/flex/flex-webchat-basic-configuration#messageinput](https://www.twilio.com/docs/flex/flex-webchat-basic-configuration#messageinput)
+
+と思ったら、いつものドキュメントでも同じ内容の記載を見つけました。
+ただ、このプロパティが日本語入力の不具合を直すとは
+なかなか発想いたらなさそうだなあ。
+
+ひとまず、例のuseLocalStateが何者かは記載ありました。
+trueにすることで、Redux stateに置く代わりに、
+ローカルコンポーネントに入力値を保持すると言ったところでしょうか。
+Defaultが記載ありませんが、挙動的にfalseがデフォルトのようです。
+
+ReduxはReactがUIの状態を管理するための、フレームワークです。
+詳しくは僕も知らないのですが、
+これでFlexを実装するためにはReact Reduxの知識も
+必要になりそうですね。敷居が高い・・・
+
+SetInputTextアクションで入力値を使いたい場合、
+falseにするのがよいとのことです。
+SetInputTextアクションが何者かは、
+また別の見慣れた下記ドキュメントに記載あります。
+[https://www.twilio.com/docs/flex/actions-framework#chat](https://www.twilio.com/docs/flex/actions-framework#chat)
+
+読み込んでみましたが、
+SetInputTextアクションは何をするためのアクションなのか
+いまいちわからずです。
+入力中に入力値をイベントかなんかで取得するんだろうか。
+
+とりあえず、trueにしても影響は大きくなさそうなので、
+一旦、trueにしてしまってよさそうです。
 
 ### Studioダイアログの整列機能がほしい
 
