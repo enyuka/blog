@@ -9,7 +9,7 @@ WordPressは便利だけど、サーバ管理がめちゃくちゃめんどく�
 
 先に結論ですが、WordPressからはてなブログへの**移行はやめました**。
 詳細は下記に続きを書きますが、
-移行コストに対して、解決できることが少ないからです。
+移行コストに対して、解決できることが少ないからです。<!--more-->
 
 ## WordPressからはてなブログへの移行方法
 
@@ -219,4 +219,6 @@ WordPressの設定で苦労してみたり、
 ブログを書き始めるきっかけになった[SOFT SKILLS](https://amzn.to/2nKDP6w)という本に、
 なぜエンジニアはブログを書くべきかがまとまってるので、
 ぜひ読んでみてください。
+
 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=birdmangai-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B01GDS0994&linkId=c0b45674a1765c96e6a05e2b68d5f76f"></iframe>
+
