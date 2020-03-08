@@ -64,3 +64,5 @@
 ```
 どこかの誰かが行動を変えなければ、何も変わらない。
 ```
+
+[https://amzn.to/2VZ1qPV](https://amzn.to/2VZ1qPV)
