@@ -25,6 +25,10 @@ result = result.replace(regex1, '<pre class="EnlighterJSRAW" data-enlighter-lang
 const regex2 = /<\/code><\/pre>/g;
 result = result.replace(regex2, '</pre>');
 
+// 最初のh2の上にmoreタグを付けて、続きを読むをつける
+const regex3 = /<h2>/;
+result = result.replace(regex3, '<!--more--><h2>');
+
 // クリップボードにコピー
 const clipboardy = require('clipboardy');
 clipboardy.writeSync(result);
