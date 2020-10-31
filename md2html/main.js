@@ -29,12 +29,14 @@ result = result.replace(regex2, '</pre>');
 const regex3 = /<h2>/;
 result = result.replace(regex3, '<!--more--><h2>');
 
-// 挨拶と締めの言葉を必ずつける
-result = `こんにちは、<a href="https://twitter.com/24guchia">@24guchia</a>です。
+// h1 の後ろに挨拶をつける
+const regex4 = /<\/h1>/;
+result = result.replace(regex4, `</h1>
+<p>こんにちは、<a href="https://twitter.com/24guchia">@24guchia</a>です。</p><br>`);
 
-${result}
-
-参考になったら下のツイートや Share ボタン、<a href="https://twitter.com/24guchia">フォロー</a>をお願いします！`;
+// 締めの言葉をつける
+result = `${result}<br>
+<p>参考になったら下のツイートや Share ボタン、<a href="https://twitter.com/24guchia">フォロー</a>をお願いします！</p>`;
 
 // クリップボードにコピー
 const clipboardy = require('clipboardy');
