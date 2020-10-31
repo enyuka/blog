@@ -29,6 +29,13 @@ result = result.replace(regex2, '</pre>');
 const regex3 = /<h2>/;
 result = result.replace(regex3, '<!--more--><h2>');
 
+// 挨拶と締めの言葉を必ずつける
+result = `こんにちは、<a href="https://twitter.com/24guchia">@24guchia</a>です。
+
+${result}
+
+参考になったら下のツイートや Share ボタン、<a href="https://twitter.com/24guchia">フォロー</a>をお願いします！`;
+
 // クリップボードにコピー
 const clipboardy = require('clipboardy');
 clipboardy.writeSync(result);
