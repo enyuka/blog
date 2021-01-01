@@ -28,11 +28,11 @@ result = result.replace(regex2, '</pre>');
 // h1 の後ろに挨拶をつける
 const regex4 = /<\/h1>/;
 result = result.replace(regex4, `</h1>
-<p>こんにちは、<a href="https://twitter.com/LpgUJuCJ4VaneQg">アジャラン</a>です。</p><br>`);
+<p>こんにちは、<a href="https://twitter.com/agile_run">アジャラン</a>です。</p><br>`);
 
 // 締めの言葉をつける
 result = `${result}<br>
-<p>参考になったら下の Share ボタン、<a href="https://twitter.com/LpgUJuCJ4VaneQg"> Twitter のフォロー</a>をお願いします！</p>`;
+<p>参考になったら下の Share ボタン、<a href="https://twitter.com/agile_run"> Twitter のフォロー</a>をお願いします！</p>`;
 
 // クリップボードにコピー
 const clipboardy = require('clipboardy');
