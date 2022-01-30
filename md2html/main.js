@@ -17,7 +17,7 @@ marked.setOptions({
   // h1とかにidが振られるのを無効にする
   headerIds: false,
 });
-let result = marked(text);
+let result = marked.parse(text);
 
 // マークダウンのコードをWordpressのEnlighterが効くようにHTMLタグを置換する処理
 const regex1 = /<pre><code>/g;
@@ -35,8 +35,6 @@ result = result.replace(regex4, `</h1>
 <p>こんにちは、<a href="https://twitter.com/24guchia">@24guchia</a>です。</p><br>`);
 
 // 締めの言葉をつける
-result = `${result}<br>
-<p>参考になったら下のツイートや Share ボタン、<a href="https://twitter.com/24guchia">フォロー</a>をお願いします！</p>`;
 
 // クリップボードにコピー
 const clipboardy = require('clipboardy');
