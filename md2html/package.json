@@ -4,8 +4,8 @@
   "description": "",
   "main": "main.js",
   "dependencies": {
-    "clipboardy": "^2.1.0",
-    "marked": "^0.7.0"
+    "clipboardy": "^3.0.0",
+    "marked": ">=4.0.10"
   },
   "devDependencies": {},
   "scripts": {
